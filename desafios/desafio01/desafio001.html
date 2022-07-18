@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            width: 100px;
+            padding: 30px;
+            font-weight: bold;
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio das Mensagens</h1>
+    <input type="submit" value="Botão1" id="ib1" onclick="clicar1()">
+    <input type="submit" value="Botão2" id="ib2" onclick="clicar2()">
+    <input type="submit" value="Botão3" id="ib3" onclick="clicar3()">
+
+    <script>
+        function clicar1() {
+            var botao1 = window.document.querySelector('input#ib1')
+            alert('Você clicou no 1º botão!')
+        }
+
+        function clicar2() {
+            var botao2 = window.document.querySelector('input#ib2')
+            window.alert('Você clicou no 2º botão!')  
+        }
+
+        function clicar3() {
+            var botao3 = window.document.querySelector('input#ib3')
+            window.alert('Você clicou no 3º botão!')
+        }
+    </script>
+</body>
+</html>
