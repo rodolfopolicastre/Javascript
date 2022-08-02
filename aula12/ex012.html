@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+</head>
+<body>
+    <H1>Horas</H1>
+    <input type="submit" value="Horas" onclick="mostrar()">
+
+    <div id="hora">
+
+    </div>
+
+    <script>
+        function mostrar() {
+            var agora = new Date()
+            var hora = agora.getHours()
+            var min = agora.getMinutes()
+            var res = window.document.querySelector('div#hora')
+
+            res.innerHTML = `<p> Agora são <strong> ${hora}:${min} </strong> minutos. </p>`
+
+            if (hora < 12) {
+                res.innerHTML += `Bom dia!`
+            }else if (hora <= 18) {
+                res.innerHTML += `Boa tarde!`
+            }else {
+                res.innerHTML += `Boa noite!`
+            }
+                
+        }
+
+    </script>
+</body>
+</html>
